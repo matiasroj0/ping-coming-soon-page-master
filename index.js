@@ -7,12 +7,13 @@ notifyBtn.addEventListener("click", ()=> {
     if(!ValidateEmail()) {
         emailError.classList.remove("hidden");
         emailInput.classList.add("email-input-error");
-        emailInput.style.border = "1px solid var(--light-red)"
+        emailInput.style.border = "1px solid var(--light-red)";
     }
     else {
         emailError.classList.add("hidden");
         emailInput.classList.remove("email-input-error");
-        emailInput.style.border = ".5px solid var(--grey)"
+        emailInput.style.border = ".5px solid var(--grey)";
+        window.location.reload();
     }
 })
 
