@@ -4,7 +4,7 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 
 ### Links
 
-- Live Site URL: 
+- Live Site URL: https://glistening-kashata-1b44be.netlify.app/
 
 ### Screenshot
 
