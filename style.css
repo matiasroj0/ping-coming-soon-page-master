@@ -1,0 +1,212 @@
+:root {
+    /* primary */
+    --blue: hsl(223, 87%, 63%);
+    /* secondary */
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    /* neutral */
+    --grey: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+/* css reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/*  */
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    padding: 2rem 4rem;
+}
+
+.card {
+    max-width: 38rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 11%;
+    padding-bottom: 2rem;
+}
+
+.card h2 {
+    color: var(--grey);
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.card h2 span {
+    color: var(--very-dark-blue);
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.card h3 {
+    color: var(--very-dark-blue);
+    font-size: .8rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+.email-div {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    padding-bottom: 3.5rem;
+}
+
+.email-div input {
+    padding: .8rem 1.5rem;
+    font-size: .85rem;
+    border-radius: 1.5rem;
+    border: .5px solid var(--grey);
+    flex: 1;
+}
+
+.email-div input::placeholder {
+    color: var(--grey);
+}
+
+.email-div input:active {
+    box-shadow: none;
+}
+  
+.email-div input:focus {
+    outline: none;
+}
+
+.email-error-text {
+    font-size: .8rem;
+    color: var(--light-red);
+    margin-top: -50px;
+    margin-left: -345px;
+    padding-bottom: 1.95rem;
+}
+
+.email-div button {
+    background-color: var(--blue);
+    color: white;
+    font-size: .85rem;
+    padding: .8rem 3rem;
+    border-radius: 1.5rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.email-div button:hover {
+    background-color: hsl(223, 77%, 67%);
+}
+
+.dashboard-img {
+    padding-bottom: 2rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.3rem;
+    padding-bottom: 1.1rem;
+}
+
+.social-icons > * {
+    color: var(--blue);
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.social-icons > *:hover {
+    background-color: var(--blue);
+    border-radius: 50%;
+    color: white;
+}
+
+.copyright {
+    font-size: .85rem;
+    color: var(--grey);
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    body {
+        align-items: baseline;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .logo {
+        width: 16%;
+    }
+
+    .card h2 {
+        font-size: 1.6rem;
+        padding-bottom: .7rem;
+    }
+
+    .email-div {
+        flex-direction: column;
+        gap: 1.5rem;
+    }    
+
+    .email-div input {
+        font-size: .70rem;
+    }
+
+    .email-div button {
+        font-size: .70rem;
+        z-index: 11;
+    }
+
+    .email-error-text {
+        font-size: .65rem;
+        color: var(--light-red);
+        text-align: center;
+        margin: auto;
+        margin-top: -119px;
+        padding-bottom: 6.45rem;
+    }
+
+    .copyright {
+        font-size: .8rem;
+    }
+}
